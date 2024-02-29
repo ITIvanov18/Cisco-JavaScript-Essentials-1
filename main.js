@@ -66,4 +66,79 @@ testFunction();
 console.log("main program:");
 console.log(globalGreeting);
 console.log(localGreeting); // -> Uncaught ReferenceError: localGreeting is not defined
+//--------------------------------------------------------//
+let a = 10; // decimal - default
+let b = 0x10; // hexadecimal
+let c = 0o10; // octal
+let d = 0b10; // binary
+   
+console.log(a); // -> 10
+console.log(b); // -> 16
+console.log(c); // -> 8
+console.log(d); // -> 2
+   
+let x = 9e3;
+let y = 123e-5;
+console.log(x); // -> 9000
+console.log(y); // -> 0.00123
+//--------------------------------------------------------//
+let a1 = 1 / 0;
+let b1 = -Infinity;
+   
+console.log(a1); // -> Infinity
+console.log(b1); // -> -Infinity
+console.log(typeof a1); // -> number
+console.log(typeof b1); // -> number
+   
+let s = "it's definitely not a number";
+let n = s * 10;
+console.log(n); // -> NaN
+console.log(typeof n); // -> number
+//--------------------------------------------------------//
+let path = "C:\\Windows" - "Windows";
+console.log(path); // -> NaN
+   
+let test = "100" - "10";
+console.log(test); // -> 90
+let test2 = "100" + "10";
+console.log(test2); // -> 10010
+console.log(typeof test); // -> number
+//--------------------------------------------------------//
+let country = "Malawi";
+let continent = "Africa";
+   
+let sentence = ` ${country} is located in ${continent}.`;
+console.log(sentence); // -> Malawi is located in Africa.
+//--------------------------------------------------------//
+console.time();
+console.log("test console"); // -> test console
+console.timeEnd(); // -> default: 0.108154296875 ms
+//--------------------------------------------------------//
+let river = "Mekong";
+let character = river.charAt(2);
+console.log(character); // -> k
+//--------------------------------------------------------//
+let str = "java script language";
+   
+console.log(str.length); // -> 20
+console.log('test'.length); // -> 4
+   
+console.log(str.charAt(0)); // -> 'j'
+console.log('abc'.charAt(1)); // -> 'b'
+   
+console.log(str.slice(0, 4)); // -> 'java'
+console.log('test'.slice(1, 3)); // -> 'es'
+   
+console.log(str.split(' ')); // -> ['java', 'script', 'language']
+console.log('192.168.1.1'.split('.')); // -> ['192', '168', '1', '1']
+//--------------------------------------------------------//
+let someResource;
+console.log(someResource); // -> undefined
+console.log(typeof someResource); // -> undefined
+   
+someResource = null;
+console.log(someResource); // -> null
+console.log(typeof someResource); // -> object
+//--------------------------------------------------------//
+
 

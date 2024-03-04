@@ -26,5 +26,8 @@ console.log(`Price: ${trainTicket.price}`);
 Using dot notation, add the name and surname fields to the object by entering your data as values. 
 Try to display the individual fields on the console.*/
 
+let person = {};
+person.name = "Ivan";
+person.surname = "Ivanov";
 
-
+console.log(`${person.name} ${person.surname}`);

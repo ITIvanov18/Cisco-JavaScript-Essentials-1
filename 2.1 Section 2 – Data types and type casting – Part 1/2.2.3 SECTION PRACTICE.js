@@ -84,4 +84,15 @@ for (let i = 0; i < libraryOfBooks.length; i++) {
 }
 
 //____________________________________________________________________________________________________//
+//Question 5: 
+//Use the slice command to copy the last two books to the new array.
+
+let selectedBooks = libraryOfBooks.slice(-2);
+console.log(selectedBooks[0].title);
+console.log(selectedBooks[1].title);
+
+
+
+
+
 

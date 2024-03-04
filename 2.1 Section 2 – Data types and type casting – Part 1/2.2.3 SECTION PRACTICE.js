@@ -84,6 +84,7 @@ for (let i = 0; i < libraryOfBooks.length; i++) {
 }
 
 //____________________________________________________________________________________________________//
+
 //Question 5: 
 //Use the slice command to copy the last two books to the new array.
 
@@ -92,7 +93,6 @@ console.log(selectedBooks[0].title);
 console.log(selectedBooks[1].title);
 
 //____________________________________________________________________________________________________//
-
 
 //Question 6: 
 /*The first book from the collection is lost in unexplained circumstances. 
@@ -110,11 +110,46 @@ for (let j = 0; j < libraryOfBooks.length; j++) {
 }
 
 //____________________________________________________________________________________________________//
+
 //Question 7: 
 //Display the sum of the pages of all the books from the collection.
 
 let sumOfPages = libraryOfBooks[0].pages + libraryOfBooks[1].pages + libraryOfBooks[2].pages;
 console.log(`pages: ${sumOfPages}`);
+
+
+//____________________________________________________________________________________________________//
+
+//2.2.5  LAB  Data Types
+/*Display the first and last contact, again in the format: name / phone / email. 
+Use the length property of the array to determine the index of the last element. 
+Remember that the array elements are indexed starting at 0.*/
+
+let contacts = [{
+    name: "Maxwell Wright",
+    phone: "(0191) 719 6495",
+    email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+    }, {
+    name: "Raja Villarreal",
+    phone: "0866 398 2895",
+    email: "posuere.vulputate@sed.com"
+    }, {
+    name: "Helen Richards",
+    phone: "0800 1111",
+    email: "libero@convallis.edu"
+    }];
+    
+    let newContact = {
+    name: "Maisie Haley",
+    phone: "0913 531 3030",
+    email: "risus.Quisque@urna.ca"
+    }
+    
+    contacts.push(newContact);
+    
+    console.log(contacts[0].name + " / " + contacts[0].phone + " / " + contacts[0].email);
+    console.log(contacts[contacts.length - 1].name + " / " + contacts[contacts.length - 1].phone + " / " +  contacts[contacts.length - 1].email);
+    
 
 
 

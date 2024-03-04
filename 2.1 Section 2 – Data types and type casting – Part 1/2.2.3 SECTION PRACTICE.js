@@ -91,6 +91,24 @@ let selectedBooks = libraryOfBooks.slice(-2);
 console.log(selectedBooks[0].title);
 console.log(selectedBooks[1].title);
 
+//____________________________________________________________________________________________________//
+
+
+//Question 6: 
+/*The first book from the collection is lost in unexplained circumstances. 
+You have already accepted the loss, so remove it from the array. Which method will you use for this purpose? 
+Display the length of the array and all the names of the books from the collection in turn.*/
+
+libraryOfBooks.shift();
+console.log("\nQuestion 6:")
+for (let j = 0; j < libraryOfBooks.length; j++) {
+    let book = libraryOfBooks[j];
+    console.log("Title: " + book.title);
+    console.log("Author: " + book.author);
+    console.log("Pages: " + book.pages);
+    console.log("-----------------------------");
+}
+
 
 
 

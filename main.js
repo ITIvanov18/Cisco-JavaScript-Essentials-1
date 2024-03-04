@@ -36,7 +36,7 @@ let height2 = 180;
     console.log(weight2); // -> 70
 }
 console.log(height); // -> 180
-console.log(weight2); // -> Uncaught ReferenceError: weight is not defined
+//console.log(weight2); // -> Uncaught ReferenceError: weight is not defined
 //--------------------------------------------------------//
 let  height3  =  200;
 {

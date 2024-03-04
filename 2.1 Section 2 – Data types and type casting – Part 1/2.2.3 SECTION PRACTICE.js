@@ -1,5 +1,5 @@
 
-//Objects
+//Objects//
 
 //Question 1: 
 /*Create an object that describes a train ticket and store it in the ticket variable. The object must have three fields:
@@ -31,3 +31,32 @@ person.name = "Ivan";
 person.surname = "Ivanov";
 
 console.log(`${person.name} ${person.surname}`);
+
+//____________________________________________________________________________________________________//
+
+//Arrays//
+
+//Question 3: We are setting up our small library of books about JavaScript programming. 
+/* We have three books and want to prepare a list of them. We will store three pieces information about each book: title, author, and number of pages:
+    -Speaking JavaScript, Axel Rauschmayer, 460;
+    -Programming JavaScript Applications, Eric Elliott, 254;
+    -Understanding ECMAScript 6, Nicholas C. Zakas, 352.
+Create an array of three objects representing the books. Each object must have the following properties: title, author, pages. */
+
+let libraryOfBooks = [{ 
+    title: "Speaking JavaScript", 
+    author: "Axel Rauschmayer", 
+    pages: 460 
+    },
+    { 
+        title: "Programming JavaScript Applications", 
+        author: "Eric Elliot", 
+        pages: 254 
+    }, 
+    { 
+    title: "Understanding ECMAScript 6", 
+    author: "Nicholas C. Zakas", 
+    pages: 352 
+}];
+
+

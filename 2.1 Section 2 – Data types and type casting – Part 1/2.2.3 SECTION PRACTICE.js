@@ -59,4 +59,29 @@ let libraryOfBooks = [{
     pages: 352 
 }];
 
+//____________________________________________________________________________________________________//
+
+//Question 4: 
+/*Add a new book to the collection: Learning JavaScript Design Patterns, by Addy Osmani, 254 pages. 
+Use the appropriate method to do this, which will attach the book at the end of the array. 
+Display the length of the array and, in turn, all the book names in the collection.*/
+
+let newBook = {
+    title: "Learning JavaScript Design Patterns",
+    author: "Addy Osmani",
+    pages: 254
+};
+
+libraryOfBooks.push(newBook);
+console.log(libraryOfBooks.length + " total books."); 
+
+for (let i = 0; i < libraryOfBooks.length; i++) {
+    let book = libraryOfBooks[i];
+    console.log("Title: " + book.title);
+    console.log("Author: " + book.author);
+    console.log("Pages: " + book.pages);
+    console.log("-----------------------------");
+}
+
+//____________________________________________________________________________________________________//
 

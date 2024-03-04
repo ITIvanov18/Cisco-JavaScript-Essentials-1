@@ -109,6 +109,15 @@ for (let j = 0; j < libraryOfBooks.length; j++) {
     console.log("-----------------------------");
 }
 
+//____________________________________________________________________________________________________//
+//Question 7: 
+//Display the sum of the pages of all the books from the collection.
+
+let sumOfPages = libraryOfBooks[0].pages + libraryOfBooks[1].pages + libraryOfBooks[2].pages;
+console.log(`pages: ${sumOfPages}`);
+
+
+
 
 
 

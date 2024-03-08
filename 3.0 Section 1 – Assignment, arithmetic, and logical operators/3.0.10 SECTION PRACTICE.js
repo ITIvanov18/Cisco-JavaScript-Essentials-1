@@ -28,3 +28,36 @@ console.log(true || false);
 console.log(false || !false);
 console.log(false || false || true);
 console.log(true || false && false && true);
+
+console.log(10 === 5); // -> false
+console.log(10 === 10); // -> true
+console.log(10 === 10n); // -> false
+console.log(10 === "10"); // -> false
+console.log("10" === "10"); // -> true
+console.log("Alice" === "Bob"); // -> false
+console.log(0 === false); // -> false
+console.log(undefined === false); // -> false
+
+console.log(10 !== 5); // -> true
+console.log(10 !== 10); // -> false
+console.log(10 !== 10n); // -> true
+console.log(10 !== "10"); // -> true
+console.log("10" !== "10"); // -> false
+console.log("Alice" !== "Bob"); // -> true
+console.log(0 !== false); // -> true
+console.log(undefined !== false); // -> true
+console.log(10 != 5); // -> true
+console.log(10 != 10); // -> false
+console.log(10 != 10n); // -> false
+console.log(10 != "10"); // -> false
+console.log("10" != "10"); // -> false
+console.log("Alice" != "Bob"); // -> true
+console.log(0 != false); // -> false
+console.log(undefined != false); // -> true
+console.log(NaN != NaN); // -> true
+
+console.log(true ? "Alice" : "Bob"); // -> Alice
+console.log(false ? "Alice" : "Bob"); // -> Bob
+let name = 1 > 2 ? "Alice" : "Bob";
+console.log(name); // -> Bob
+
